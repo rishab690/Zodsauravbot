@@ -56,7 +56,8 @@ def log_command(user_id, target, port, time):
     else:
         username = f"UserID: {user_id}"
     
-    with open(LOG_FILE, "a") as file:  # Open in "append" mode
+    with open(LOG_FILE, "a") as file:  
+# Open in "append" mode
         file.write(f"Username: {username}\nTarget: {target}\nPort: {port}\nTime: {time}\n\n")
 
 
